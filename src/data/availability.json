@@ -1,0 +1,49 @@
+{
+  "_comment": "Un consultorio por llave. La llave es un slug estable: viaja en IDs de botones (loc_norte), en la columna location de la DB y en las env vars CALDAV_CALENDAR_<SLUG>. label = nombre completo para cuerpos de mensaje; buttonLabel = versión corta para botones de WhatsApp (máx 20 chars); detail = torre/consultorio, se anexa al label en mensajes a la paciente; keywords = palabras sueltas que el classifier reconoce en texto libre; firstVisitInfo (opcional) = mensaje de la doctora con indicaciones de llegada, se envía UNA vez a cada paciente la primera vez que agenda en ese consultorio. Horarios en formato 24h HH:MM, zona America/Mexico_City; días en inglés en minúsculas.",
+  "norte": {
+    "label": "Clínica Norte",
+    "buttonLabel": "Clínica Norte",
+    "detail": "Piso 1",
+    "keywords": [
+      "norte"
+    ],
+    "firstVisitInfo": "*CLÍNICA NORTE*\nAv. Ejemplo 123, Piso 1\nCiudad de México\n\nEl estacionamiento está en el sótano; el valet te recibe ahí.\n\nPor favor llega 15 minutos antes: el registro de primera vez toma tiempo.\n\n*¡BIENVENIDA!* 💛",
+    "schedule": {
+      "monday": {
+        "start": "09:00",
+        "end": "17:00",
+        "slotMinutes": 40
+      },
+      "wednesday": {
+        "start": "09:00",
+        "end": "17:00",
+        "slotMinutes": 40
+      },
+      "friday": {
+        "start": "09:00",
+        "end": "17:00",
+        "slotMinutes": 40
+      }
+    }
+  },
+  "sur": {
+    "label": "Clínica Sur",
+    "buttonLabel": "Clínica Sur",
+    "detail": "Piso 3, Consultorio 301",
+    "keywords": [
+      "sur"
+    ],
+    "schedule": {
+      "tuesday": {
+        "start": "09:00",
+        "end": "17:00",
+        "slotMinutes": 40
+      },
+      "thursday": {
+        "start": "09:00",
+        "end": "17:00",
+        "slotMinutes": 40
+      }
+    }
+  }
+}

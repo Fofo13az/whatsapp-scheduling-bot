@@ -1,0 +1,44 @@
+{
+  "name": "whatsapp-scheduling-bot",
+  "version": "0.1.0",
+  "description": "Sistema automatizado de gestión de citas médicas vía WhatsApp para el consultorio de la Dra. Ejemplo",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "db:init": "node scripts/init-db.js",
+    "smoke": "node scripts/smoke-messageBuilder.js && node scripts/smoke-classifier.js && node scripts/smoke-ics.js && node scripts/smoke-flow.js && node scripts/smoke-phase3.js && node scripts/smoke-doctor-templates.js && node scripts/smoke-waitlist.js && node scripts/smoke-waitlist-ondemand.js && node scripts/smoke-pagination.js && node scripts/smoke-google-calendar.js && node scripts/smoke-delivery-status.js && node scripts/smoke-calendar-sync.js",
+    "test": "echo \"Tests aún no configurados — Fase 4\" && exit 0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "whatsapp",
+    "whatsapp-cloud-api",
+    "appointments",
+    "medical",
+    "bot",
+    "caldav"
+  ],
+  "author": "Adolfo Hernández Sánchez",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fofo13az/whatsapp-scheduling-bot.git"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.22.3",
+    "node-cron": "^4.6.0",
+    "pino": "^9.5.0",
+    "tsdav": "^2.3.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "pino-pretty": "^11.3.0"
+  }
+}

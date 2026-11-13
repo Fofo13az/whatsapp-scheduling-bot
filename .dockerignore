@@ -1,0 +1,10 @@
+node_modules
+.git
+.env
+*.md
+docs
+.claude
+.vscode
+service-account-*.json
+*service-account*.json
+*serviceaccount*.json

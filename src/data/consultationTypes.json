@@ -1,0 +1,15 @@
+{
+  "_comment": "Tipos de consulta confirmados con la doctora: primera vez y subsecuente, ambas de 40 min. La llave es el slug estable (IDs type_<slug>, columna consultation_type en la DB).",
+  "primera_vez": {
+    "label": "Consulta de primera vez",
+    "shortLabel": "Primera vez",
+    "durationMin": 40,
+    "description": "Tu primera consulta con la doctora"
+  },
+  "subsecuente": {
+    "label": "Consulta subsecuente",
+    "shortLabel": "Subsecuente",
+    "durationMin": 40,
+    "description": "Ya has tenido consulta con la doctora"
+  }
+}
